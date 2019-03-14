@@ -69,6 +69,10 @@ createBoard();
 
 //reset button
 var refreshButton = document.querySelector("button");
-refreshButton.onclick = function() {
+refreshButton.addEventListener('click', function() {
   location.reload();
-};
+}, false);
+
+// refreshButton.onclick = function() {
+//   location.reload();
+// };
